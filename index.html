@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description"
+              content="SITUATE: Indoor Human Trajectory Prediction through Geometric Features and Self-Supervised Vision Representation. Accepted @ ICPR 2024.">
+        <meta name="keywords" content="Human Trajectory Prediction, Geometric Deep Learning, Self-Supervised Vision Representation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SITUATE: Indoor Human Trajectory Prediction through Geometric Features and Self-Supervised Vision Representation</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+              rel="stylesheet">
+
+        <link rel="stylesheet" href="./static/css/bulma.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <link rel="icon" href="./static/images/intelligo.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+        <script src="./static/js/index.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <a class="navbar-item" target="_blank" href="https://capogrosso.eu">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                          More Research
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" target="_blank" href="https://github.com/intelligolabs">
+                                Intelligo ML Lab
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title, authors, institution, links. -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">SITUATE: Indoor Human Trajectory Prediction through Geometric Features and Self-Supervised Vision Representation</h1>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.capogrosso.eu">Luigi Capogrosso</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://atoaiari.github.io">Andrea Toaiari</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.di.univr.it/?ent=persona&id=47617">Andrea Avogaro</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.di.univr.it/?ent=persona&id=83502&lang=en">Uzair Khan</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.linkedin.com/in/ajivoji1/">Aditya Jivoji</a><sup>2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en">Marco Cristani</a><sup>1</sup>
+                                </span>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                              <span class="author-block">
+                                  <sup>1</sup>
+                                  Department of Engineering for Innovation Medicine, University of Verona, Italy
+                              </span>
+                              <span class="author-block">
+                                  <sup>2</sup>
+                                  Visvesvaraya National Institute of Technology, Nagpur, India
+                              </span>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- Proceedings link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+                                    <!-- arXiv link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span>
+                                    <!-- Code link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="https://github.com/intelligolabs/SITUATE" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Code</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="columns is-centered">
+                                <div class="column has-text-centered">
+                                    <span class="tag is-success is-primary is-large">🎉 Accepted @ ICPR 2024 🎉</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaser. -->
+        <section class="hero teaser">
+            <div class="container is-max-desktop">
+                <div class="hero-body has-text-centered">
+                    <img src="./static/images/teaser.png" alt="MTL-Split teaser" type="image/png" style="width: 85%; height: 85%;">
+                    <h6 class="subtitle is-6 has-text-centered">
+                        Examples of different trajectories from the Supermarket [10] dataset to show the difficulty of the indoor trajectory prediction task.
+                        In particular, the dataset showcases long trajectories (person 4), self-loops (person 1 and person 3), and confusing movements (person 2) performed in an environment that strongly affects the people's paths.
+                        Specifically, the red circle represents the starting point of a trajectory, and the yellow star represents its final point.
+                    </h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abstract. -->
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                Patterns of human motion in outdoor and indoor environments are substantially different due to the scope of the scene and the typical intentions of people therein.
+                                While outdoor trajectory forecasting has received significant attention, indoor forecasting is still an underexplored research area.
+                                This paper proposes SITUATE, a novel approach to cope with indoor human trajectory prediction by leveraging equivariant and invariant geometric features and self-supervised vision representation.
+                                The geometric learning modules model the intrinsic symmetries and human movements inherent in indoor spaces.
+                                This concept becomes particularly important because self-loops at various scales and rapid direction changes often characterize indoor trajectories.
+                                On the other hand, the vision representation module is used to acquire spatial-semantic information about the environment to predict users' future locations more accurately.
+                                We evaluate our method through comprehensive experiments on the two most famous indoor trajectory forecasting datasets, <i>i.e.</i>, THÖR and Supermarket, obtaining state-of-the-art performance.
+                                Furthermore, we also achieve competitive results in outdoor scenarios, showing that indoor-oriented forecasting models generalize better than outdoor-oriented ones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation. -->
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+<pre><code>TBA.
+</code></pre>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a class="icon-link" target="_blank" href="https://github.com/luigicapogrosso" class="external-link" disabled>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This website is licensed under a <a rel="license" target="_blank"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                            </p>
+                            <p>
+                                The source code is based on <a target="_blank" href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
