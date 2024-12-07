@@ -13,12 +13,13 @@ Luigi Capogrosso<sup>1</sup>, Andrea Toaiari<sup>1</sup>, Andrea Avogaro<sup>1</
 <sup>2</sup> *Visvesvaraya National Institute of Technology, Nagpur, India*
 
 ## Citation ##
-If you use [**SITUATE**](https://arxiv.org/abs/2409.00774), please, cite the following paper:
+If you use [**SITUATE**](https://link.springer.com/chapter/10.1007/978-3-031-78444-6_24), please, cite the following paper:
 ```
-@article{capogrosso2024situate,
-  title={SITUATE: Indoor Human Trajectory Prediction through Geometric Features and Self-Supervised Vision Representation},
-  author={Capogrosso, Luigi and Toaiari, Andrea and Avogaro, Andrea and Khan, Uzair and Jivoji, Aditya and Fummi, Franco and Cristani, Marco},
-  journal={arXiv preprint arXiv:2409.00774},
-  year={2024}
+@InProceedings{capogrosso2024situate,
+  author    = {Capogrosso, Luigi and Toaiari, Andrea and Avogaro, Andrea and Khan, Uzair and Jivoji, Aditya and Fummi, Franco and Cristani, Marco},
+  booktitle = {27th International Conference on Pattern Recognition (ICPR)},
+  title     = {{SITUATE: Indoor Human Trajectory Prediction Through Geometric Features and Self-supervised Vision Representation}},
+  year      = {2024},
+  doi       = {10.1007/978-3-031-78444-6_24},
 }
 ```
